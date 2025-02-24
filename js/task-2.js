@@ -1,4 +1,4 @@
-function makeArray(firstArray, secondArray, maxLength) {
+function makeArray(firstArray, secondAray, maxLength) {
   const concatArray = firstArray.concat(secondArray).slice(0, maxLength);
   return concatArray;
 }
