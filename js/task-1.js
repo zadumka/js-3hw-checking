@@ -2,7 +2,10 @@ function slugify(title) {
    slug = title.toLowerCase().split(' ').join('-');
   return slug;
 }
-
+function makeArray(firstArray, secondAray, maxLength) {
+  const concatArray = firstArray.concat(secondArray).slice(0, maxLength);
+  return concatArray;
+}
 console.log(slugify('Arrays for beginners')); // "arrays-for-beginners"
 console.log(slugify('English for developer')); // "english-for-developer"
 console.log(slugify('Ten secrets of JavaScript')); // "ten-secrets-of-javascript"
